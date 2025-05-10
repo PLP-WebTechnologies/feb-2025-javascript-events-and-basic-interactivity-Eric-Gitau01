@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Event Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🎉 JavaScript Event Playground</h1>
+  </header>
+
+  <!-- Section 1: Event Buttons -->
+  <section class="event-section">
+    <h2>🎈 Event Handling</h2>
+    <button id="click-btn">Click Me!</button>
+    <p id="click-result"></p>
+
+    <div id="hover-box" title="Hover over me!"></div>
+    <p id="hover-result"></p>
+
+    <input type="text" id="key-input" placeholder="Type something..." />
+    <p id="key-result"></p>
+
+    <button id="secret-btn">Double or Hold Me 👀</button>
+    <p id="secret-result"></p>
+  </section>
+
+  <!-- Section 2: Interactive Button -->
+  <section class="interactive-section">
+    <h2>🎮 Interactive Button</h2>
+    <button id="toggle-btn">Toggle Color</button>
+  </section>
+
+  <!-- Section 3: Image Gallery -->
+  <section class="gallery-section">
+    <h2>🖼️ Image Gallery</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/150 " alt="Image 1" class="active">
+      <img src="https://via.placeholder.com/150/ff0000 " alt="Image 2">
+      <img src="https://via.placeholder.com/150/00ff00 " alt="Image 3">
+    </div>
+    <button id="next-btn">Next</button>
+  </section>
+
+  <!-- Section 4: Tabs -->
+  <section class="tabs-section">
+    <h2>📁 Tabs</h2>
+    <div class="tab-buttons">
+      <button onclick="openTab(event, 'tab1')">Tab 1</button>
+      <button onclick="openTab(event, 'tab2')">Tab 2</button>
+      <button onclick="openTab(event, 'tab3')">Tab 3</button>
+    </div>
+
+    <div id="tab1" class="tab-content active">
+      <p>This is Tab 1 content.</p>
+    </div>
+    <div id="tab2" class="tab-content">
+      <p>This is Tab 2 content.</p>
+    </div>
+    <div id="tab3" class="tab-content">
+      <p>This is Tab 3 content.</p>
+    </div>
+  </section>
+
+  <!-- Section 5: Form Validation -->
+  <section class="form-section">
+    <h2>📋 Form Validation</h2>
+    <form id="user-form">
+      <label>Name:
+        <input type="text" id="name" required oninput="validateForm()">
+      </label><br>
+
+      <label>Email:
+        <input type="email" id="email" required oninput="validateForm()">
+      </label><br>
+
+      <label>Password:
+        <input type="password" id="password" required oninput="validateForm()">
+      </label><br>
+
+      <div id="feedback"></div>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

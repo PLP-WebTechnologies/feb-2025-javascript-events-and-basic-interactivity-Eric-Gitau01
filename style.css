@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f0f8ff;
+  }
+  
+  .event-section,
+  .interactive-section,
+  .gallery-section,
+  .tabs-section,
+  .form-section {
+    margin-bottom: 40px;
+  }
+  
+  #hover-box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border: 2px solid #666;
+    transition: background-color 0.3s ease;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .gallery img {
+    display: none;
+    width: 150px;
+    height: 150px;
+    transition: opacity 0.5s ease;
+  }
+  
+  .gallery img.active {
+    display: inline-block;
+    opacity: 1;
+  }
+  
+  .tab-buttons button {
+    margin-right: 10px;
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  #feedback {
+    color: red;
+    margin-top: 10px;
+  }
